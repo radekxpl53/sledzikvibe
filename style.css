@@ -41,7 +41,7 @@ header #container {
     white-space: nowrap;
 }
 
-header p {
+header #logo {
     color: #E7F2FA;
     font-weight: bold;
     font-size: 26pt;
@@ -83,7 +83,6 @@ footer {
     width: 100%;
     bottom: 0;
     display: flex;
-    flex: 0 0 50px;
     margin-top: auto;
     align-items: center;
     justify-content: center;
@@ -94,8 +93,6 @@ footer {
 
 footer #container {
     width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -202,6 +199,37 @@ main article .right-side {
     padding: 10px;
 }
 
+main #species-list {
+    width: 70vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main #species-list li {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    header #header-menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header #header-menu a {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     main {
         width: 100vw;
@@ -209,7 +237,7 @@ main article .right-side {
     }
 
     main article img {
-        visibility: collapse;
+        display: none;
     }
 
     main article .panel {
