@@ -214,6 +214,27 @@ main #species-list li {
     align-items: center;
 }
 
+main table {
+    box-sizing: content-box;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #357ABD;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+main table th {
+    background-color: #4A90E2;
+    border: 2px solid #357ABD;
+    color: #E7F2FA;
+    padding: 5px;
+}
+
+main table td {
+    border: 2px solid #357ABD;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 900px) {
     header #header-menu {
         width: 100%;
@@ -266,5 +287,10 @@ main #species-list li {
         width: 100%;
         flex-direction: column;
         gap: 35px;
+    }
+
+    main table {
+        border: none;
+        display: block;
     }
 }
