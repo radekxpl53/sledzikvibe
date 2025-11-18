@@ -258,6 +258,15 @@ main table td:nth-child(2) {
         align-items: center;
         justify-content: center;
     }
+
+    main article table {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
